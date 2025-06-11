@@ -13,10 +13,10 @@ go build
 ## Running
 
 Provide a single argument, the path to the file containing the
-tetrominoes:
+tetrominoes. A sample input is provided in `sample.txt`:
 
 ```
-./tetris-optimizer sample.txt
+go run . sample.txt
 ```
 
 If the input file contains invalid data or the program encounters an
@@ -37,4 +37,12 @@ by a blank line. For example:
 ....
 ..##
 ..##
+```
+
+## Testing
+
+Run the unit tests with:
+
+```
+go test ./...
 ```
